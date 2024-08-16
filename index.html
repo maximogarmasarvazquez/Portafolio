@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- MENU-->
+   <div class="contenedor-header"> 
+      <header>
+         <div class="logo">
+             <a href="#">Maximo</a>
+         </div>
+         <nav id="nav" >
+            <div class="icon">
+             <ul>         
+                <li><i class="fa-solid fa-house"></i><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><i class="fa-solid fa-hammer"></i><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><i class="fa-solid fa-briefcase"></i><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul> 
+          </div>
+         </nav>
+         <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+      </header>
+   </div>
+
+   <!-- INICIO-->
+   <section id="inicio" class="inicio">
+     <di class="contenedor-banner">
+        <div class="contenedor-img">
+            <img src="imagenes/maxi1.png" alt="">
+        </div>
+        <h1>MAXIMO GARMASAR VAZQUEZ</h1>
+        <h2>Desarrollador Web</h2>
+        <div class="redes">
+            <a href="https://github.com/maximogarmasarvazquez"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/maximo-garmasar-vazquez-622056242/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+     </div>
+   </section>
+
+   <!-- SOBREMI-->
+   <section id="sobremi" class="sobremi">
+     <div class="contenido-seccion">
+         <h2>Sobre mi</h2>
+         <p> <span>Hola, soy Maximo Garmasar Vazquez y vivo en Córdoba, Argentina.</span> Soy un Desarrollador web, tengo una profunda pasión por el desarrollo de software y por eso lo doy todo para garantizar la calidad de mi trabajo. Mi objetivo es formar parte de un gran equipo y mejorar continuamente mis habilidades y conocimientos. Busco poder ser parte de una empresa que me de la oportunidad de seguir creciendo como Desarrollador, ganar experiencia y poder realizar proyectos con un equipo de trabajo.</p> 
+         <div class="fila">
+            <!--datos-->
+             <div class="col">
+                 <h3>Datos personales</h3>
+                 <ul>
+                  <li>
+                        <strong>Fecha de nacimiento</strong>
+                        14/03/2003
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                       +54 3546 431626
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        maxivaz55@gmail.com
+                    </li>
+                    <li>
+                        <strong>Localidad</strong>
+                        Villa Ciudad Parque, Córdoba, Argentina
+                    </li>
+                  
+                 </ul>
+             </div>
+
+             <!-- INTERESES -->
+             <div class="col">
+                 <h3>Intereses</h3>
+                 <div class="contenedor-intereses"> 
+                    <div class="intereses">
+                        <i class="fa-solid fa-desktop"></i>       
+                        <span>DESARROLLO</span>       
+                    </div>
+                   <div class="intereses">
+                        <i class="fa-solid fa-person-running"></i>  
+                        <span>DEPORTES</span>  
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-plane"></i>   
+                        <span>VIAJES</span>           
+                    </div>
+                    
+                    <div class="intereses">
+                        <i class="fa-solid fa-users"></i>
+                        <span>AMIGOS</span>
+                    </div>
+                    <div class="intereses">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      <span>ESTUDIOS</span>
+                  </div>
+                 </div>
+             </div>
+         </div>
+         
+     </div>
+   </section>
+
+   <!-- SKILLS-->
+   <section class="skills" id="skills">
+     <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila"> 
+          <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <div class="tecnologias">
+                     <span>Javascript</span> <img class="tecnologias-icons" src="imagenes/javascript.svg" alt="">
+                    </div>
+                   
+                </div>
+                <div class="skill">
+                    <div class="tecnologias">
+                     <span >HTML & CSS</span><img class="tecnologias-icons" src="imagenes/html5.svg" alt=""> <img class="tecnologias-icons" src="/imagenes/css3svg.svg" alt="">
+                    </div> 
+                    
+                </div>
+                <div class="skill">
+                    <div class="tecnologias">
+                     <span >REACT</span> <img class="tecnologias-icons" src="imagenes/react.svg" alt="">
+                   
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="tecnologias">
+                     <span >C Sharp</span> <img class="tecnologias-icons" src="/imagenes/c--4.svg" alt="">
+                    </div> 
+                </div>
+                <div class="skill"> 
+                    <div class="tecnologias">
+                     <span >SQL & SQLite</span><img class="tecnologias-icons"src="/imagenes/sqlite.svg" alt="">
+                    </div> 
+                </div>
+                <div class="skill">
+                    <div class="tecnologias">
+                     <span >Tailwind CSS</span> <img class="tecnologias-icons"src="/imagenes/tailwindcss.svg" alt="">
+                    </div> 
+                </div>
+            </div>
+          <div class="col">
+
+               <div class="pro-Skills">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                     <span><i class="fa-solid fa-check "></i>  Comunicacion efectiva</span>
+                </div>
+                <div class="skill">
+                    <span><i class="fa-solid fa-check "></i> Responsabilidad</span>
+                   
+                   
+                </div>
+                <div class="skill">
+                    <span><i class="fa-solid fa-check "></i> Trabajo en equipo</span>
+                   
+                </div>
+                <div class="skill">
+                    <span><i class="fa-solid fa-check "></i> Aprendizaje continuo</span>
+                   
+                  
+                </div> 
+
+                <div class="skill">
+                    <span><i class="fa-solid fa-check "></i> Creatividad</span>
+                  
+                </div> 
+            </div>
+            </div> 
+        </div>
+     </div>
+   </section>
+
+   <!--CV-->
+   <section id="curriculum" class="curriculum">
+     <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <h3>Estudios</h3>
+        <div class="fila">
+            <div class="col izquierda">
+                <div class="item izq">
+                    <h4>Técnico superior en desarrollo web y aplicaciones</h4>
+                    <span class="casa">Instituto Superior Santa Rosa de Calamuchita</span>
+                    <span class="fecha">2022 - 2024</span>
+                    <p>El tecnico Superior en Desarrollo Web y Aplicaciones Digitales, es un profesional que desarrolla aplicaciones 
+                    para la World Wide Web y aplicaciones distribuidas en red que se ejecutan desde un servidor a un navegador web.
+                    Genera proyectos propios tomando decisiones personales o en grupo, para generar un modelo productivo más innovador, 
+                    competitivo e internacionalizado.</p> 
+                </div>
+            </div>
+            <div class="col derecha"> 
+                <div class="item der">
+                    <h4>Diplomatura en introducción a la porgramacion en Java</h4>
+                    <span class="casa">UTN Facultad Regional Villa Maria</span>
+                    <span class="fecha">2021 - 2022</span>
+                    <p>  En la diplomatura en introduccion a la programcion en Java di mis primeros pasos en la programacion,
+                    algunos de los temas mas importantes fueron, pensamiento logico, desarrollo de algoritmos, variables, estructuras
+                    de control, programacion orientada a objetos, metodos, clases, metodologias agiles, entre otros.  </p>   
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <!--PORTFOLIO-->
+   <section id="proyectos" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PROYECTOS</h2>
+        <div class="galeria"> 
+
+            
+
+              <div class="proyecto" >
+                <img src="imagenes/p1.jpg" alt="">
+              <div class="overlay">
+                <div class="contenedor-enlaces">
+                    <a class="enlace" href="https://maximogarmasarvazquez.github.io/Pokemon-Api-Page/">  
+                      <div class="titulos">                 
+                        <h3>Buscador de Pokemones</h3>
+                        <h4>Proyecto JS/HTML/CSS y PokeApi</h4>
+                        <h4><i class="fa-solid fa-globe"></i> Web site</h4> 
+                      </div>                 
+                    </a>     
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/Pokemon-Api-Page">
+                        <h5>
+                            <i class="fa-solid fa-code"></i> Ver codigo
+                        </h5>
+                   </a>
+                </div>
+              </div>
+            </div>
+
+              <div class="proyecto" >
+                <img src="imagenes/p3.png" alt="">
+              <div class="overlay">
+                <div class="contenedor-enlaces">
+                    <a class="enlace" href="https://maximogarmasarvazquez.github.io/contador-de-clics/">  
+                      <div class="titulos">                 
+                        <h3>Contador de clics</h3>
+                        <h4>Proyecto JS/HTML/CSS y ReactJS</h4>
+                        <h4><i class="fa-solid fa-globe"></i> Web site</h4> 
+                      </div>                 
+                    </a>     
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/contador-de-clics">
+                        <h5>
+                            <i class="fa-solid fa-code"></i> Ver codigo
+                        </h5>
+                   </a>
+                </div>
+              </div>
+            </div>
+
+             
+
+              <div class="proyecto" >
+                <img src="imagenes/p2.png" alt="">
+              <div class="overlay">
+                <div class="contenedor-enlaces">
+                    <a class="enlace" href="https://maximogarmasarvazquez.github.io/CarritoDeCompras/">  
+                      <div class="titulos">                 
+                        <h3>Ecommerce con carrito</h3>
+                        <h4>Proyecto JS/HTML/CSS</h4>
+                        <h4><i class="fa-solid fa-globe"></i> Web site</h4> 
+                      </div>                 
+                    </a>     
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/CarritoDeCompras">
+                        <h5>
+                            <i class="fa-solid fa-code"></i> Ver codigo
+                        </h5>
+                   </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="proyecto" >
+                <img src="imagenes/p4.png" alt="">
+              <div class="overlay">
+                <div class="contenedor-enlaces">
+                    <a class="enlace" href="https://maximogarmasarvazquez.github.io/App-Api-Clima/">  
+                      <div class="titulos">                 
+                        <h3>App del Clima </h3>
+                        <h4>Proyecto JS/HTML/CSS y API OpenWeatherMap</h4>
+                        <h4><i class="fa-solid fa-globe"></i> Web site</h4> 
+                      </div>                 
+                    </a>     
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/App-Api-Clima">
+                        <h5>
+                            <i class="fa-solid fa-code"></i> Ver codigo
+                        </h5>
+                   </a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto" >
+                <img src="imagenes/aliencrush.jpg" alt="">
+              <div class="overlay">
+                <div class="contenedor-enlaces">
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/AlienCrush">  
+                      <div class="titulos">                 
+                        <h3> AlienCrush</h3>
+                        <h4>Proyecto  C#/Unity</h4>
+                        <h4><i class="fa-solid fa-gamepad"></i> Video Juego</h4> 
+                      </div>                 
+                    </a>     
+                    <a class="enlace" href="https://github.com/maximogarmasarvazquez/AlienCrush">
+                        <h5>
+                            <i class="fa-solid fa-code"></i> Ver mas
+                        </h5>
+                   </a>
+                </div>
+              </div>
+            </div>
+            
+                
+            
+          
+        </div>
+      </div>
+   </section>
+
+   <!--CONTACTO-->
+   <section id="contacto" class="contacto">
+     <div class="contenido-seccion">
+         <h2>CONTACTO</h2>
+         <div class="fila">
+         <div class="col">
+         <form action="https://formspree.io/f/xayzgapz"
+         method="POST">
+                <input type="text" placeholder="Tu Nombre" name="name">
+                <input type="tel" placeholder="Numero telefonico" name="telefono">
+                <input type="email" placeholder="Direccion de correo" name="email">
+                <input type="text" placeholder="Tema" name="tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button type="submit">
+                    Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+       </div>
+      </div>
+     </form>
+   </section>
+
+   <!--FOOTER-->
+   <footer>
+     <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+     </a>
+     <div class="redes">
+        <a href="https://github.com/maximogarmasarvazquez"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/maximo-garmasar-vazquez-622056242/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>
