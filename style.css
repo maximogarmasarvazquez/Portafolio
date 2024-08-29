@@ -250,8 +250,7 @@ background-color: #47ABCC;
   padding: 10px;
   align-items: center;
 }
-.pro-Skills{
-}
+
 
 .skills .contenido-seccion{
   max-width: 1100px;
@@ -331,10 +330,28 @@ background-color: #47ABCC;
   text-align: center;
   padding: 20px 0;
 }
+.curriculum .contenido-seccion .centro-btn {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.curriculum .contenido-seccion .centro-btn .btn {
+  padding: 10px 20px;
+  background-color: #47ABCC;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.curriculum .contenido-seccion .centro-btn .btn:hover {
+  background-color: #5A748F;
+}
 
 .curriculum .fila{
   display: flex;
-  justify-content: space-betweenw;
+  justify-content: space-between;
 }
 
 .curriculum .fila .col{
@@ -491,65 +508,6 @@ background-color: #47ABCC;
 ;
 } 
 
-
-/* animaciones */
-
-@keyframes mover {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-25px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes sacudida {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-10px) rotate(-5deg);
-  }
-  75% {
-    transform: translateX(10px) rotate(5deg);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes parpadeo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes cambio-color {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: blue;
-  }
-  50% {
-    background-color: green;
-  }
-  75% {
-    background-color: yellow;
-  }
-  100% {
-    background-color: red;
-  }
-}
 
 /*SECCION CONTACTO*/
 .contacto{
@@ -866,5 +824,64 @@ nav.responsive .icon i {
 @media screen and (max-width: 768px) {
   .col {
     width: 100%;
+  }
+}
+
+/* animaciones */
+
+@keyframes mover {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes sacudida {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cambio-color {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
   }
 }
